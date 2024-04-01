@@ -147,6 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-9ac84da elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="9ac84da" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
+					<h2 style="text-align: center; background-color: #04720a; box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.268); border-radius: 25px; width: 80%; text-align: center; position: center; margin:auto; color: #ffffff; margin-bottom: 100px;" class="elementor-heading-title elementor-size-default">Conheça nosso método</h2>
 					<div style="text-align: center; margin: 20px 0; margin-bottom: 150px;">
 						<video controls style="width: 80%; max-width: 800px; height: auto;">
 							<source src="./seca21_files/video1.mp4" type="video/mp4">
@@ -872,7 +873,24 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 
 
 
-<script src="./seca21_files/swiper.min.js"></script></body><div class="troywell-avia"><template shadowrootmode="open">
+<script src="./seca21_files/swiper.min.js">
+
+
+	window.onscroll = function() {
+        var titulo = document.getElementById("tituloDinamico");
+        var distTopoPagina = titulo.getBoundingClientRect().top;
+        var alturaTela = window.innerHeight || document.documentElement.clientHeight;
+
+        // Altera a opacidade baseado na posição da rolagem
+        if (distTopoPagina < alturaTela / 1.3) {
+            titulo.style.opacity = 1;
+        } else {
+            titulo.style.opacity = 0;
+        }
+    };
+
+
+</script></body><div class="troywell-avia"><template shadowrootmode="open">
         <style>@import url("chrome-extension://adlpodnneegcnbophopdmhedicjbcgco/content/styles.css");</style>
         <div id="troywell-avia" data-v-app=""><div class="app"><div data-v-138a3c39=""><!----></div></div></div></template></div><div class="troywell-caa"><template shadowrootmode="open">
     <style>
